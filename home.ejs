@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMate</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(creative-hand-drawn-collage-with-couple-presenting-valentines-day-gifts-to-each-other-PC8HHP.jpg); */
+    overflow-x: hidden;
+   
+
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  .texts::-webkit-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+/* .main{
+   /* background-image: url(WhatsApp\ Image\ 2023-11-29\ at\ 21.59.07_e1b3472e.jpg);
+     background-repeat: no-repeat; */
+     /* background-repeat: repeat-x; */
+
+
+/*
+    background-repeat: repeat-x;
+    height: 100vh; */
+    
+/* } */
+#match{
+    color: #FD3865;
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 20px;
+    
+}
+/* #match:hover{
+ color: blue; 
+    font-size: 45px;
+} */
+#nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid black;
+    border: none;
+    /* background-color:
+    #FD3865; */
+    
+}
+.nav1{
+    display: flex;
+    flex-direction: row;
+ border: 5px solid rgb(56, 153, 51);
+ border: none;
+ width: 80%;
+ 
+
+}
+
+.items1{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    list-style: none;
+    
+    justify-content: space-between;
+  
+    
+ 
+}
+.items2{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    list-style: none;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    
+ 
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+align-items: center;
+}
+#login{
+    background-color:  #FD3865;
+    color: black;
+    border: none;
+    /* color: white; */
+    padding: 7px 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+    /* background-color:black; */
+
+}
+#lang{
+    background-color: #FD3865;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+    
+}
+#Language option{
+    padding: 10px;
+    border: none;
+
+    
+}
+#page1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 130vh;
+  
+
+}
+.texts{
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    left: 0;
+    position: absolute;
+    
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+
+
+}
+.texts:hover{
+    opacity: 1;
+}
+#text{
+    font-size: 80px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+    color:#FD3865;
+    font-style: italic;
+}
+.mm{
+    color: #FD3865;
+
+
+}
+#signup{
+    padding: 20px;
+    font-size: large;
+    border-radius: 50px;
+    background-color: orangered;
+    /* color: white; */
+    border: none;
+    color: white;
+   
+
+}
+a{
+    text-decoration: none;
+  
+}
+.a1{
+    color:  #FD3865;
+
+}
+.a1:hover{
+    font-size: x-large;
+    color: blue;
+}
+
+#support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-p_1258-108821.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 150px;
+    /* color: white; */
+
+}
+#head2{
+    font-size: 50px;
+}
+#Search{
+    width: 600px;
+    margin: 50px;
+    padding: 8px;
+    border-bottom: 0.2px solid gray ;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    
+}
+.prob{
+    width: 700px;
+
+    font-size: 20px;
+    padding: 20px 40%;
+    background-color: rgb(255, 123, 0);
+
+
+    
+}
+.prob:hover{
+    width: 750px;
+    padding: 22px 40%;
+    font-size: 25px;
+    background-color: #FD3865;
+}
+#download{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#head3{ 
+    font-size: 100px;
+    color: rgb(81, 30, 210);
+
+}
+#learn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyOXNIWAzNLDW4mV58e4RwwLQPOl8hbDNhkg&usqp=CAU); 
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#learn h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#learn p{
+    width: 1000px;
+    font-size: xx-large;
+}
+#Safety{
+ position: relative;
+ background-color: black;
+ color: white;
+ height: 70vh;
+}
+#Safety h1{
+    font-size: 50px;
+    position: relative;
+    /* left: 50%; */
+    margin: 20px;
+    /* color: orangered; */
+    
+}
+#Safety p{
+    font-size: x-large;
+    margin: 10px;
+    /* color: rgb(29, 28, 28); */
+}
+#Safety h2{
+    font-size: xx-large;
+   margin: 20px;
+   /* color: #FD3865; */
+}
+#Safety h3{
+    margin: 0px 10px;
+    /* color: gray; */
+}
+    </style>
+</head>
+<body>
+   
+
+        <div id="nav">
+            <div class="nav1">
+               
+                <ul class="items1">
+                <li> <h1 id="match">Match&#9829;Mate</h1></li>   
+                <li ><a class="a1"  href="#learn">Learn</a></li> 
+                <li><a class="a1"  href="#download">Download</a></li> 
+                <li><a class="a1"  href="#">Giftcard</a></li> 
+             <li><a class="a1" href="#Safety">Safety</a></li>
+            <li><a class="a1"  href="#support">Support</a></li>
+                  
+
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul class="items2">
+                    <li id="Language"> <select name="" id="lang">
+                        <option value="">Language</option>
+                        <!-- <option value="">Hindi</option> -->
+                        <option value="">English</option>
+                      </select> 
+                    
+                    <li> <a href="/login">  <button id="login">Log in</button>  </a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div id="page1">
+           
+            <img style="width: 90vw; height: 100vh; position: relative; bottom: 100px; position: relative;" src="https://images.unsplash.com/photo-1508717272800-9fff97da7e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmQlMjBpbWFnZSUyMGNvdXBlbHxlbnwwfHwwfHx8MA%3D%3D" alt=""  srcset="">
+        <div class="texts"> <h1 id="text">Start Something epic</h1>
+            <h1 id="text">with</h1>
+            <h1 id="text" class="mm">Match&#9829;Mate</h1>
+            
+        </div>    
+          
+         
+    </div>
+    
+   <div id="support">
+   <h1 id="head2">Hi. How can we help?</h1>
+   <input id="Search" type="text" placeholder="Search">
+   <div id="problems">
+   <div class="prob"> <a href="">A Guide TO Tinder</a></div>
+   <div style="background-color: rgb(241, 24, 96);" class="prob"><a href="">Troubleshootng</a></div>
+   <div style="background-color: rgb(252, 119, 141);" class="prob"><a href="">Security & Privacy</a></div>
+   <div style="background-color: rgb(248, 118, 211);" class="prob"><a href="">Safety & Reporting</a></div>
+   </div>
+   </div>
+
+   <div id="download">
+    <img src="https://img.freepik.com/premium-vector/gradient-coming-soon-background-with-megaphone-design_581962-57.jpg" alt="" style="width: 100vw; height: 100vh;">
+
+   </div>
+
+<div id="learn">
+    <h1>So, why choose a dating app like MatchMate?</h1>
+    <p>When it comes to dating apps, you’ve got options: Badoo, Bumble, Hinge, Match, POF, OKCupid and many more. It doesn’t matter if you want to find love, a date, or just have a casual chat, you want an app that’s the right match for you. And its not always black and white – when you want to meet new people, your friends at Tinder can help you out with features designed to make the impossible possible. Dating online just got easier.
+
+        We won’t brag about being the best free site – we’ll let you decide for yourself, by giving you Tinder at a glance.
+        
+        </p>
+        <br><br>
+           <button id="signup"> <a style="color:  white" href=""> Join us </a></button>
+        </div>
+</div>
+<div id="Safety">
+    <h2>Dating Safety Tips</h2>
+    <p> 1.Meeting new people is exciting, but you should always be cautious when interacting with someone you don’t know. Use your best judgment and put your safety <br> 2.first, whether you are exchanging initial messages or <br>
+        3.meeting in person. While you can’t control <br> 4.the actions of others, there are things you can do to help you stay safe during your Tinder experience.
+
+    </p>
+    <h2>Sexual Health & Consent</h2>
+    <p>When used correctly and consistently, condoms can significantly reduce  <br> the risk of contracting and passing on STI’s like HIV. <br> But, be aware of STIs like herpes or HPV that can be passed on through skin-to-skin contact. The risk of contracting some STIs can be reduced through <br> vaccination.</p>
+    <h3>Protect Yourself</h3>
+    <h3>Know Your Status</h3>
+    <h3>Consent</h3>
+    <h3></h3>
+
+
+
+</div>
+   
+</body>
+</html>

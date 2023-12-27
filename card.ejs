@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+   
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: auto 70px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    background: linear-gradient(to right bottom, #ff85a1, #ff9bb5, #ffa9c4, #ffc3a0, #ffedd5);
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+    
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+}
+.card{
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    margin: 20px 0;
+    width:280px ;
+    transition: 0.3s ease-in-out;
+
+}
+
+.card:hover{
+    transform: scale(1.7);
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+.card .cardcontent{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+
+}
+.card .media_icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+.card .media_icons i{
+margin-top: 10px;
+opacity: 0.6;
+transition: all 0.3s ease;
+color: #fff;
+}
+.card .media_icons i:hover{
+    opacity: 1;
+
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+}
+.card .rating i{
+    font-size: 18px;
+    color: #7d2ae8;
+    margin: 0 2px;
+}
+
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card .button button{
+    background-color: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button button:hover{
+  background-color: #6616d0;
+}
+
+      </style>
+</head>
+<body>
+    <div>
+    <section>
+
+     
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Krishna</span>
+                            <span class="profession">Web developer <br>Empathetic
+                            </span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Krishna</span>
+                            <span class="profession"> Web developer <br>Compassionate</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://plus.unsplash.com/premium_photo-1664015982598-283bcdc9cae8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVufGVufDB8fDB8fHww" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Krishna</span>
+                            <span class="profession">Web developer <br>Empathetic
+                            </span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1696236802816-87ed45bc8cb7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Krishna</span>
+                            <span class="profession">Web developer <br>Kind-hearted</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1614208242226-6a145842a8c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Aman</span>
+                            <span class="profession">App developer <br>Altruistic</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Vikash</span>
+                            <span class="profession">Web developer <br>Optimistic</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Alok</span>
+                            <span class="profession">Pilot<br>Gracious</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1559893088-c0787ebfc084?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Akhilesh</span>
+                            <span class="profession">Student<br>Resilient</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Nilanshu</span>
+                            <span class="profession">Doctor<br>Thoughtful</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="image">
+                            <img src="https://images.unsplash.com/photo-1571153041701-728931a0ff63?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxtZW58ZW58MHx8MHx8fDA%3D" alt="">
+                        </div>
+
+                        <div class="media_icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name"> Krishna</span>
+                            <span class="profession">Teacher <br>Empowering</span>
+                          </div>
+<div class="rating">
+
+</div>
+<div class="button">
+    <button class="aboutme">About Me</button>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+   
+</div>
+</body>
+</html>
